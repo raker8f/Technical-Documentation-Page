@@ -1,0 +1,109 @@
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Technical Documentation Page</title>
+   <link rel="stylesheet" href="./styles.css">
+ </head>
+<body>
+  <nav id="navbar">
+    <header>C# Document</header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#Variables" class="nav-link">Variables</a>
+    <a href="#Data_Types" class="nav-link">Data Types</a>
+    <a href="#Control_Flow" class="nav-link">Control Flow</a>
+    <a href="#Methods_and_Classes" class="nav-link">Methods and Classes</a>
+    <a href="#Reference" class="nav-link">Reference</a>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>C# is a modern, object-oriented programming language developed by Microsoft as part of the .NET platform. It is widely used for building desktop applications, web services, games (using Unity), and more.</p>
+      <p>C# emphasizes readability, type safety, and productivity. Its syntax is similar to Java and C++, making it accessible to developers with experience in those languages.</p>
+      <pre><code>
+    using System;
+
+    class Program {
+        static void Main() {
+            Console.WriteLine("Hello, C#!");
+        }
+    }
+      </code></pre>
+    </section>
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables are used to store data in a C# program. Each variable has a specific type that determines what kind of data it can hold, such as int, string, or bool.</p>
+      <p>You must declare a variable before using it, and you can optionally assign it a value.</p>
+      <pre><code>
+    int age = 25;
+    string name = "Alice";
+    bool isStudent = true;
+      </code></pre>
+    </section>
+    <section class="main-section" id="Data_Types">
+      <header>Data Types</header>
+      <p>C# is a statically-typed language, which means you must specify the type of a variable when declaring it. Common data types include:</p>
+      <ul>
+        <li>int for integers</li>
+        <li>double for floating-point numbers</li>
+        <li>bool for boolean values</li>
+        <li>char for single characters</li>
+        <li>string for text</li>
+      </ul>
+      <p>You can also define your own types using class or struct.</p>
+      <pre><code>
+    double price = 19.99;
+    char grade = 'A';
+    string message = "Welcome to C#!";
+      </code></pre>
+    </section>
+    <section class="main-section" id="Control_Flow">
+      <header>Control Flow</header>
+      <p>Control flow statements determine the execution path of your program. C# includes:</p>
+      <ul>
+        <li>Conditional statements like if, else if, else</li>
+        <li>Looping structures like for, while, foreach</li>
+      </ul>
+      <p>These structures help you perform tasks based on conditions or repeat tasks multiple times.</p>
+      <pre><code>
+    int number = 10;
+
+    if (number > 0) {
+        Console.WriteLine("Positive number");
+    } else {
+        Console.WriteLine("Non-positive number");
+    }
+      </code></pre>
+
+      <pre><code>
+    for (int i = 0; i < 5; i++) {
+        Console.WriteLine("Count: " + i);
+    }
+      </code></pre>
+    </section>
+    <section class="main-section" id="Methods_and_Classes">
+      <header>Methods and Classes</header>
+      <p>C# uses classes to define custom types and methods to define reusable blocks of code. Methods are typically placed inside classes.</p>
+      <p>A method can accept parameters and return a value. Classes can hold data (fields) and behavior (methods).</p>
+      <pre><code>
+      class Calculator {
+          public int Add(int a, int b) {
+              return a + b;
+          }
+      }
+
+      class Program {
+          static void Main() {
+              Calculator calc = new Calculator();
+              Console.WriteLine(calc.Add(5, 3)); // Output: 8
+          }
+      }
+      </code></pre> 
+    </section>
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <p>All the documentation in this page is taken from chatgpt</p>
+    </section>
+  </main>
+</body>
+</html>
